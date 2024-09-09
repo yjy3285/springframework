@@ -21,7 +21,6 @@
 		<config>src/main/resources/spring/dispatcher/ch14_aop.xml</config>
 	</configs>
 	<autoconfigs>
-		<config>src/main/resources/spring/dispatcher/config.xml</config>
 	</autoconfigs>
 	<configSets>
 	</configSets>
