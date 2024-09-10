@@ -13,5 +13,9 @@
     <Logger name="com.mycompany.springframework" level="warn" additivity="false">
         <AppenderRef ref="Console"/>
     </Logger>
+    
+    <Logger name="jdbc.sqltiming" level="info" additivity="false">
+        <AppenderRef ref="Console"/>
+    </Logger>
   </Loggers>
 </Configuration>

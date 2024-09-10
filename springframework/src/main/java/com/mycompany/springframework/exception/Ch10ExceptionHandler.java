@@ -22,12 +22,20 @@ public class Ch10ExceptionHandler {
 		return "ch10/customException";	
 	}
 	@ExceptionHandler(Exception.class)
-	public String handleException(Model model) {
+	public String handleException() {
 		return "ch10/exception";	
 	}
 	@ExceptionHandler(NoHandlerFoundException.class)
-	public String handleException() {
+	public String handleNoHandlerFoundException() {
 		return "ch10/404";	
 	}
+	@ExceptionHandler(Ch15AccountNotExistException.class)
+	public String handleCh15AccountNotExistException(
+			Ch15AccountNotExistException e, Model model) {
+		model.addAttribute("errorMessage",e.getMessage());
+		return "ch15/accountNotExistException";
+		
+	}
+	
 }
 
