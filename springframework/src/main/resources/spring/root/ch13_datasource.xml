@@ -10,13 +10,13 @@
 		
 		<!--  
 		<property name="driverClassName" value="oracle.jdbc.OracleDriver"/>
-		<property name="url" value="jdbc:oracle:thin:@kosa160.iptime.org:1521:orcl"/>
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:orcl"/>
 		-->
 		
 		<property name="driverClassName" value="net.sf.log4jdbc.DriverSpy"/>
-		<property name="url" value="jdbc:log4jdbc:oracle:thin:@kosa160.iptime.org:1521:orcl"/>
+		<property name="url" value="jdbc:log4jdbc:oracle:thin:@localhost:1521:orcl"/>
 		
-		<property name="username" value="user_spring"/>
+		<property name="username" value="miniproject"/>
 		<property name="password" value="oracle"/>
 		
 		<property name="initialSize" value="2"/>

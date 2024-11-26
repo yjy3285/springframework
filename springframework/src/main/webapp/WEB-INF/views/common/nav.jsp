@@ -33,7 +33,16 @@
 		<sec:authorize access="isAuthenticated()">
 			<img width="40" src="${pageContext.request.contextPath}/resources/image/login.png"/>
 			<span class="text-white me-2"><sec:authentication property="principal.username"/></span>
+			<%-- CSRF가 비활성화되어 있을 경우 --%>
 			<a class="btn btn-danger btn-sm" href="${pageContext.request.contextPath}/logout">로그아웃</a>
+			
+			<%-- CSRF가 활성화되어 있을 경우 --%>
+			<%-- 
+			<form class="d-inline-block" method="post" action="${pageContext.request.contextPath}/logout">
+				<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+				<button class="btn btn-danger btn-sm">로그아웃</button>
+			</form>
+			--%>
 		</sec:authorize>
 	</div>
 </nav>

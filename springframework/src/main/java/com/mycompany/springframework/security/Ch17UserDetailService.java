@@ -35,6 +35,7 @@ public class Ch17UserDetailService implements UserDetailsService{
 		List<GrantedAuthority> authorities = new ArrayList<>();
 		authorities.add(new SimpleGrantedAuthority(member.getMrole()));
 		
+		
 		UserDetails userDetails = new Ch17UserDetails(member,authorities) ;
 		
 		return userDetails;
